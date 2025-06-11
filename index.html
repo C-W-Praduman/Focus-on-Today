@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="src/style.css">
-  <link rel="stylesheet" href="src/bootstrap.css">
-  <link rel="stylesheet" href="src/base.css">
-</head>
-<body>
- <div class="container-mine">
-   <h1 class="text-center margin-1 heading "><span>Focus on</span> Today</h1>
-   <div class="task-box mx-auto rounded shadow pd-custom">
-    <div class="top flex items-center gap-3 margin-2 ">
-       <h2 class="fs-32 fw-700">Today</h2>
-       <img src="./images/Sun.svg" alt="">
-      </div>
-   <p class="fs-16 fw-400 opacity-low margin-2">Raise the bar by completing your goals!</p>
-      <div class="progress-bar rounded margin-1">
-        <div class="progress rounded"></div>
-        <p class="task-completed-text">0/3 task completed</p>
-      </div>
-      <p class="warning warn-clr">Please set all the 3 goals!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus on today</title>
+    <link rel="shortcut icon" href="/images/Sun.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="src/base.css" />
+  </head>
+  <body>
+    <div class="container-mine">
+      <h1 class="text-center margin-1 heading"><span>Focus on</span> Today</h1>
+      <div class="task-box mx-auto rounded shadow pd-custom">
+        <div class="top flex items-center justify-between margin-2">
+          <div class="flex items-center gap-3">
+            <h2 class="fs-32 fw-700">Today</h2>
+            <img src="./images/Sun.svg" alt="" />
+          </div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" 
+              class="dark-mode-switch"   
+              aria-label="Toggle dark mode" 
+              />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <p class="fs-16 fw-400 opacity-low margin-2">
+          Raise the bar by completing your goals!
+        </p>
+        <div class="progress-bar rounded margin-1">
+          <div class="progress rounded"></div>
+          <p class="task-completed-text">0/3 task completed</p>
+        </div>
+        <p class="warning warn-clr">Please set all the 3 goals!</p>
 
-      <div class="goal goal1 flex items-center gap-3 margin-2">
-    <input type="checkbox" class="checkbox">
-    <input type="text" placeholder="Add new goal... " class="fs-16 fw-500 opacity-low goals">
-   </div>
-      <div class="goal goal2 flex items-center gap-3 margin-2">
-    <input type="checkbox" class="checkbox">
-    <input type="text" placeholder="Add new goal... " class="fs-16 fw-500 opacity-low goals">
-   </div>
-      <div class="goal goal3 flex items-center gap-3 margin-2">
-    <input type="checkbox" class="checkbox">
-    <input type="text" placeholder="Add new goal... " class="fs-16 fw-500 opacity-low goals">
-   </div>
-   <p class="margin-1 text-center fs-16 fw-500">“Move one step ahead, today!”</p>
-   <p class="margin-1 text-center fs-10 fw-500 opacity-low" >Made with  ❤️ by Praduman Gupta</p>
+        <div class="goal goal1 flex items-center gap-3 margin-2">
+          <input type="checkbox" class="checkbox" />
+          <input
+            type="text"
+            placeholder="Add new goal... "
+            class="fs-16 fw-500 opacity-low goals"
+          />
+        </div>
+        <div class="goal goal2 flex items-center gap-3 margin-2">
+          <input type="checkbox" class="checkbox" />
+          <input
+            type="text"
+            placeholder="Add new goal... "
+            class="fs-16 fw-500 opacity-low goals"
+          />
+        </div>
+        <div class="goal goal3 flex items-center gap-3 margin-2">
+          <input type="checkbox" class="checkbox" />
+          <input
+            type="text"
+            placeholder="Add new goal... "
+            class="fs-16 fw-500 opacity-low goals"
+          />
+        </div>
+        <p class="margin-1 text-center fs-16 fw-500">
+          “Move one step ahead, today!”
+        </p>
+          <div class="flex items-center justify-center ">
+        <button class="reset-btn">Reset All</button>
+
+          </div>
+        <p class="margin-1 text-center fs-10 fw-500 opacity-low">
+          Made with ❤️ by Praduman Gupta
+        </p>
+      </div>
     </div>
 
-   
-
- </div>
-
-</body>
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
